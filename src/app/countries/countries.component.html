@@ -1,1 +1,20 @@
-<p>countries works!</p>
+<p>Countries</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>ISO2</th>
+      <th>ISO3</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of countries">
+      <td>{{country.id}}</td>
+      <td>{{country.name}}</td>
+      <td>{{country.iso2}}</td>
+      <td>{{country.iso3}}</td>
+    </tr>
+  </tbody>
+</table>

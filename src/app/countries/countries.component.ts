@@ -12,7 +12,7 @@ export class CountriesComponent {
   countries: Country[] = [];
 
   constructor(http: HttpClient){
-    http.get<Country[]>(environment.baseUrl + '/api/countries').subscribe({
+    http.get<Country[]>(environment.baseUrl + 'api/countries').subscribe({
       next: result => {
         this.countries = result;
       },
